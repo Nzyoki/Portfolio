@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#nav {
+    text-align: center;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+#nav a {
+    text-decoration: none;
+    color: crimson;
+    font-size: large;
+    margin: :0 15px;
+    padding: 5px 10px;
+}
+
+#nav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 2rem;
+}
+
+th,
+td {
+    border: 1px solid;
+    text-align: left;
+}
