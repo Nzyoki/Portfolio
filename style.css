@@ -1,44 +1,168 @@
 body {
-    background-color: black;
-    color: aliceblue;
-    padding: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    color: #333;
+}
+
+h1, h3 {
+    color: brown;
 }
 
 #nav {
-    text-align: center;
-    justify-content: center;
-    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(100, 169, 146);
+    padding: 10px 20px;
+    border-bottom: 2px solid brown ;
+}
+
+#nav h1 {
+    margin: 0;
+}
+
+#nav div {
+    display: flex;
+    gap: 20px;
 }
 
 #nav a {
     text-decoration: none;
-    color: crimson;
-    font-size: large;
-    margin: :0 15px;
-    padding: 5px 10px;
+    color:brown;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 #nav a:hover {
-    color: blue;
-    text-decoration: underline;
+    color: #005bb5;
 }
 
-h3 {
-    color: aliceblue;
+#About {
+    padding: 20px;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-img {
-    width: 100%;
+#About img {
+    border-radius: 50%;
+    margin: 20px 0;
 }
 
-table {
+#skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e9f5ff;
+}
+
+#skills h3 {
+    text-align: center;
+}
+
+#skills ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+#education {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#education table {
+    margin: 0 auto;
     width: 80%;
-    margin: 2rem;
+    border-collapse: collapse;
 }
 
-th,
-td {
-    border: 1px solid;
-    text-align: left;
+#education th, #education td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#education th {
+    background-color: #0073e6;
+    color: white;
+}
+
+#Projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#Projects img {
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#Contact {
+    padding: 20px;
+    background-color: #e9f5ff;
+    text-align: center;
+}
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#Contact input, #Contact textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#Contact button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#Contact button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgb(100, 169, 146);
+    color: white;
+}
+
+footer svg {
+    fill: white;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+footer svg:hover {
+    fill: #ccc;
+}
+
+@media (max-width: 768px) {
+    #skills {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #education table {
+        width: 100%;
+    }
+
+    #Contact input, #Contact textarea {
+        width: 100%;
+    }
 }
